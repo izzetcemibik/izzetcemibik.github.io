@@ -36,8 +36,8 @@
 .headerRight > div {
     display: flex;
     align-items: center;
-    padding-left: 10px; /* Sol kenarda içerik ile çizgi arasında boşluk */
-    border-left: 1px solid #000; /* Sol çizgi */
+    padding-left: 10px; 
+    border-left: 1px solid #000; 
     height: 100%;
 }
 .searchLogo{
@@ -120,13 +120,13 @@
     text-decoration: none;
 }
 .tableContent::after {
-    content: ""; /* Pseudo öğenin içeriği olmayacak */
-    position: absolute; /* Mutlak konumlandırma */
+    content: ""; 
+    position: absolute; 
     top: 0;
     bottom: 0;
-    right: 0; /* Çizginin sağ kenara göre konumu, ihtiyaca göre ayarlayabilirsiniz */
-    width: 1px; /* Çizginin genişliği */
-    background-color: #ccc; /* Çizgi rengi */
+    right: 0; 
+    width: 1px; 
+    background-color: #ccc; 
 }
 .tableDownButtons{
     margin-top: 3%;
@@ -169,8 +169,8 @@
 .upperContents > ul{
     display: flex;
     align-items: center;
-    padding-left: 10px; /* Sol kenarda içerik ile çizgi arasında boşluk */
-    border-left: 1px solid #000; /* Sol çizgi */
+    padding-left: 10px; 
+    border-left: 1px solid #000; 
 }
 .butceneGorePlanlaCerceve{
     background-color: rgb(220, 220, 220);
@@ -188,8 +188,8 @@
     text-decoration: none;
 }
 .butceneGorePlanla {
-    display: flex; /* Yatay hizalama için */
-    align-items: center; /* İçerikleri dikey olarak hizalar */
+    display: flex; 
+    align-items: center; 
     font-family: "Open Sans", sans-serif;
 }
 .surdurulebilirlik{
@@ -208,28 +208,28 @@
 .surdurulebilirlikBaslikLogo{
     height: auto;
     width: 30px;
-    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
-    top: 50%; /* Dikeyde tam ortaya hizalar */
-    left: 3%; /* Yatayda tam ortaya hizalar */
-    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
-    color: white; /* Metin rengi */
+    position: absolute; 
+    top: 50%; 
+    left: 3%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
 }
 .surdurulebilirlikBaslik{
-    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
-    top: 50%; /* Dikeyde tam ortaya hizalar */
-    left: 15%; /* Yatayda tam ortaya hizalar */
-    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
-    text-align: center; /* Metni yatayda hizalar */
-    color: white; /* Metin rengi */
+    position: absolute; 
+    top: 50%; 
+    left: 15%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
     font-family: "Open Sans", sans-serif;
 }
 .surdurulebilirlikYazı{
-    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
-    top: 50%; /* Dikeyde tam ortaya hizalar */
-    left: 50%; /* Yatayda tam ortaya hizalar */
-    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
-    text-align: center; /* Metni yatayda hizalar */
-    color: white; /* Metin rengi */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
     font-family: "Open Sans", sans-serif;
 }
 .detayButon{
@@ -247,11 +247,11 @@
 .yoncaIMG{
     height: auto;
     width: 150px;
-    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
-    top: 50%; /* Dikeyde tam ortaya hizalar */
-    right: -6%; /* Yatayda tam ortaya hizalar */
-    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
-    color: white; /* Metin rengi */
+    position: absolute;
+    top: 50%;
+    right: -6%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 .mobilUygulama{
     background-color: orange;
@@ -293,7 +293,19 @@
     color: white;
 }
 .qrCode p {
-    margin: 2px 0; /* Metinler arasında boşluk bırakır */
+    margin: 2px 0;
+}
+.enUcuzBilet{
+    display: flex;
+    margin-left: 10%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+}
+.enUcuzBilet1{
+    color: orange;
+}
+.enUcuzBilet2{
+    margin-left: 1%;
 }
 @media only screen and (max-width: 768px) {
     .headerRow {
@@ -301,21 +313,20 @@
     }
     .menu {
       margin-left: 0;
-      margin-top: 20px; /* Örneğin: Menü öğeleri arasında bir boşluk bırakabilirsiniz */
+      margin-top: 20px; 
     }
     .menuContents {
       flex-direction: column;
-      gap: 10px; /* Dikey boşluk */
+      gap: 10px;
       margin-left: 0;
     }
     .pegasusLogo {
-      margin-bottom: 20px; /* Logo ile menü arasında boşluk */
+      margin-bottom: 20px;
     }
     .sliderPhotos{
         width: 700px;
         right: -90px;
     }
-    /* Diğer öğelerin boyutlarını ve yerleşimini burada ayarlayın */
     .upperContents{
         gap: 0px;
         flex-wrap: nowrap;
@@ -384,6 +395,13 @@
     .qrCode{
         margin-top: 3%;
         margin-left: 18%;
+    }
+    .enUcuzBilet{
+        font-size: 20px;
+        flex-direction: column;
+    }
+    .enUcuzBilet2{
+        margin-top: -15%;
     }
   }
   
