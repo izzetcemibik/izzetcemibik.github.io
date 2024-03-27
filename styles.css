@@ -1,0 +1,389 @@
+.headerRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pegasusLogo{
+    display: flex;
+}
+.menu{
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+.menuContents{
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.menuContentInnerLogo{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.headerRight{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 40px;
+    align-items: center;
+    gap: 10px;   
+}
+.headerRight > div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px; /* Sol kenarda içerik ile çizgi arasında boşluk */
+    border-left: 1px solid #000; /* Sol çizgi */
+    height: 100%;
+}
+.searchLogo{
+    height: auto;
+    width: 20px;
+}
+.search, .bolbolRight, .crrLanguage{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.logIn{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+.langugeSelectIcon{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.languageName{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+.menu a, .headerRight a{
+    color: black;
+    text-decoration: none;
+}
+.menu:hover a, .headerRight:hover a{
+    color: black;
+    text-decoration: none;
+}
+.sliderPhotos{
+    position: absolute;
+}
+.photo1{
+    width: 100%;
+}
+.table{
+    background-color: white;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 17%;
+    top: 200px;
+}
+.tableDownContetns{
+    display: flex;
+}
+.upperContents{
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    margin-left: 20px;
+    list-style: none;
+    border: 1px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tableContent{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+.tableContent a{
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+.tableContent:hover a{
+    color: black;
+    text-decoration: none;
+}
+.tableContent::after {
+    content: ""; /* Pseudo öğenin içeriği olmayacak */
+    position: absolute; /* Mutlak konumlandırma */
+    top: 0;
+    bottom: 0;
+    right: 0; /* Çizginin sağ kenara göre konumu, ihtiyaca göre ayarlayabilirsiniz */
+    width: 1px; /* Çizginin genişliği */
+    background-color: #ccc; /* Çizgi rengi */
+}
+.tableDownButtons{
+    margin-top: 3%;
+    border: 1px solid;
+    width: fit-content;
+    margin-left: 6%;
+    border-radius: 2px;
+}
+.yonButtons{
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+}
+.rota{
+    margin-left: 6%;
+    margin-top: 3%;
+}
+.rotaInput{
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(144, 142, 142);
+}
+.rotaButton{
+    border-radius: 50px;
+    width: 35px;
+    cursor: pointer;
+}
+.ucuzUcusAra{
+    cursor: pointer;
+    background-color: orange;
+    margin-left: 6%;
+    margin-top: 2%;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    font-family: "Open Sans", sans-serif;
+}
+.upperContents > ul{
+    display: flex;
+    align-items: center;
+    padding-left: 10px; /* Sol kenarda içerik ile çizgi arasında boşluk */
+    border-left: 1px solid #000; /* Sol çizgi */
+}
+.butceneGorePlanlaCerceve{
+    background-color: rgb(220, 220, 220);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: start;
+    display: flex;
+}
+.butceneGorePlanlaCerceve a{
+    color: black;
+    text-decoration: none;
+}
+.butceneGorePlanlaCerceve:hover a{
+    color: black;
+    text-decoration: none;
+}
+.butceneGorePlanla {
+    display: flex; /* Yatay hizalama için */
+    align-items: center; /* İçerikleri dikey olarak hizalar */
+    font-family: "Open Sans", sans-serif;
+}
+.surdurulebilirlik{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+}
+.surdurulebilirlik img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.surdurulebilirlikBaslikLogo{
+    height: auto;
+    width: 30px;
+    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
+    top: 50%; /* Dikeyde tam ortaya hizalar */
+    left: 3%; /* Yatayda tam ortaya hizalar */
+    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
+    color: white; /* Metin rengi */
+}
+.surdurulebilirlikBaslik{
+    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
+    top: 50%; /* Dikeyde tam ortaya hizalar */
+    left: 15%; /* Yatayda tam ortaya hizalar */
+    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
+    text-align: center; /* Metni yatayda hizalar */
+    color: white; /* Metin rengi */
+    font-family: "Open Sans", sans-serif;
+}
+.surdurulebilirlikYazı{
+    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
+    top: 50%; /* Dikeyde tam ortaya hizalar */
+    left: 50%; /* Yatayda tam ortaya hizalar */
+    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
+    text-align: center; /* Metni yatayda hizalar */
+    color: white; /* Metin rengi */
+    font-family: "Open Sans", sans-serif;
+}
+.detayButon{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(16, 207, 16);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+.yoncaIMG{
+    height: auto;
+    width: 150px;
+    position: absolute; /* Metin içeriğini görselin üzerine konumlandırır */
+    top: 50%; /* Dikeyde tam ortaya hizalar */
+    right: -6%; /* Yatayda tam ortaya hizalar */
+    transform: translate(-50%, -50%); /* Metnin tam ortaya hizalanması için kullanılır */
+    color: white; /* Metin rengi */
+}
+.mobilUygulama{
+    background-color: orange;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mobilUygulamaBaslik{
+    margin-left: 6%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25;
+}
+.mobilUygulamaIcerik{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.mobilContent{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mobilResim{
+    height: auto;
+    width: 170px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.qrCode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+.qrCode p {
+    margin: 2px 0; /* Metinler arasında boşluk bırakır */
+}
+@media only screen and (max-width: 768px) {
+    .headerRow {
+      flex-direction: column;
+    }
+    .menu {
+      margin-left: 0;
+      margin-top: 20px; /* Örneğin: Menü öğeleri arasında bir boşluk bırakabilirsiniz */
+    }
+    .menuContents {
+      flex-direction: column;
+      gap: 10px; /* Dikey boşluk */
+      margin-left: 0;
+    }
+    .pegasusLogo {
+      margin-bottom: 20px; /* Logo ile menü arasında boşluk */
+    }
+    .sliderPhotos{
+        width: 700px;
+        right: -90px;
+    }
+    /* Diğer öğelerin boyutlarını ve yerleşimini burada ayarlayın */
+    .upperContents{
+        gap: 0px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: -105px;
+    }
+    .tableContent{
+        width: 10px;
+        height: auto;
+        align-items: normal;
+        font-size: 13px;
+    }
+    .tableDown{
+        margin-bottom: 70%;
+    }
+    .tableDownButtons{
+        align-items: center;
+        transform: translate(50%, 50%);
+    }
+    .rota{
+        align-items: center;
+    }
+    .rotaInput{
+        margin-top: 5%;
+        width: 130px;
+    }
+    .rotaButton{
+        border-radius: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .ucusAra{
+        margin-top: 5%;
+        margin-left: 30%;
+    }
+    .butceneGorePlanlaCerceve{
+        border-radius: 10px;
+    }
+    .textButce{
+        font-size: 11px;
+    }
+    .surdurulebilirlik, .backgrounIMG{
+        width: 80%;
+        height: 50px;
+        display: flex;
+    }
+    .surdurulebilirlikBaslik{
+        margin-left: 13%;
+        font-size: 7px;
+    }
+    .surdurulebilirlikYazı, .surdurulebilirlikBaslikLogo{
+        display: none;
+    }
+    .detayButon{
+        width: 15px;
+        background-color: none;
+    }
+    .yoncaIMG{
+        color: white;
+        width: 30px;
+        left: 6%;
+    }
+    .mobilResim{
+        margin-left: 25%;
+    }
+    .qrCode{
+        margin-top: 3%;
+        margin-left: 18%;
+    }
+  }
+  
