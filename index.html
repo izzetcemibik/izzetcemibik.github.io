@@ -176,19 +176,21 @@
                     <button class="yonButtons">Tek Yön</button>
                     <button class="yonButtons">Gidiş Dönüş</button>
                 </div>
-                <div class="rota">
-                    <input class="rotaInput" type="text" placeholder="Nerden">
-                    <button class="rotaButton">
-                        <- 
-                        <br>
-                         ->
-                    </button>
-                    <input class="rotaInput" type="text" placeholder="Nereye">
-                    <input class="rotaInput" type="calendar" placeholder="Gidiş Tarihi">
-                    <input class="rotaInput" type="number" placeholder="Yolcu Sayısı">
-                </div>
-                <div class="ucusAra">
-                    <button class="ucuzUcusAra">UCUZ UÇUŞ ARA</button>
+                <div class="rotaVeUcusAra">
+                    <div class="rota">
+                        <input class="rotaInput" type="text" placeholder="Nerden">
+                        <button class="rotaButton">
+                            <- 
+                            <br>
+                             ->
+                        </button>
+                        <input class="rotaInput" type="text" placeholder="Nereye">
+                        <input class="rotaInput" type="date" placeholder="Gidiş Tarihi">
+                        <input class="rotaInput" type="number" min="1" placeholder="Yolcu Sayısı">
+                    </div>
+                    <div class="ucusAra">
+                        <button class="ucuzUcusAra">UCUZ UÇUŞ ARA</button>
+                    </div>
                 </div>
                 <div class="butceneGorePlanlaCerceve">
                     <a href="">
@@ -228,7 +230,8 @@
                 Sürdürülebilirlik Merkezimi ziyaret edin! Burdan başlayabilirsiniz.
             </p>
         </div>
-        <button class="detayButon">Detaylı İncele ></button>
+        <button class="detayButon">Detaylı İncele ❯</button>
+        <button class="detayButonV2">❯</button>
         <div class="yoncaIMG">
             <img src="./big-yonca.webp">
         </div>

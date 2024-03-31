@@ -141,11 +141,17 @@
     font-family: "Open Sans", sans-serif;
     border: none;
 }
+.rotaVeUcusAra{
+    display: flex;
+    flex-wrap: wrap;
+
+}
 .rota{
     margin-left: 6%;
     margin-top: 3%;
 }
 .rotaInput{
+    width: 190px;
     height: 30px;
     border: none;
     border-bottom: 2px solid rgb(144, 142, 142);
@@ -156,10 +162,11 @@
     cursor: pointer;
 }
 .ucuzUcusAra{
+    width: 200px;
     cursor: pointer;
     background-color: orange;
-    margin-left: 6%;
-    margin-top: 2%;
+    margin-left: 20%;
+    margin-top: 15%;
     height: 50px;
     color: white;
     border-radius: 10px;
@@ -244,6 +251,19 @@
     height: 40px;
     font-family: "Open Sans", sans-serif;
 }
+.detayButonV2{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(16, 207, 16);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-family: "Open Sans", sans-serif;
+}
 .yoncaIMG{
     height: auto;
     width: 150px;
@@ -264,11 +284,13 @@
 .mobilUygulamaBaslik{
     margin-left: 6%;
     width: 100%;
+}
+.mobilUygulamaBaslik h1{
+    font-size: 20px;
     font-family: "Open Sans", sans-serif;
-    font-size: 25;
 }
 .mobilUygulamaIcerik{
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Open Sans", sans-serif;
 }
 .mobilContent{
@@ -306,19 +328,68 @@
 }
 .enUcuzBilet2{
     margin-left: 1%;
-}
+}@media only screen and (min-width: 768px) and (max-width: 1300px) {
+    .table{
+        margin-bottom: 30%;
+    }
+    .ucusAra{
+        margin-bottom: 3%;
+    }
+    .surdurulebilirlik, .backgrounIMG{
+        width: 80%;
+        height: 50px;
+        display: flex;
+    }
+    .surdurulebilirlikBaslik{
+        margin-left: 10%;
+        font-size: 15px;
+        margin-top: 1%;
+    }
+    .surdurulebilirlikYazı, .surdurulebilirlikBaslikLogo{
+        display: none;
+    }
+    .detayButon{
+        display: none;
+    }
+    .detayButonV2{
+        display: block;
+        margin-top: 1%;
+        width: 15px;
+    }
+    .yoncaIMG{
+        color: white;
+        width: 40px;
+        left: 6%;
+        margin-top: 1%;
+    }
+    .mobilUygulama{
+        width: 80%;
+        margin-top: 3%;
+    }
+    .mobilResim{
+        margin-left: 25%;
+        width: 170px;
+    }
+    .qrCode{
+        margin-top: 3%;
+        margin-left: 18%;
+    }
+  }
 @media only screen and (max-width: 768px) {
     .headerRow {
-      flex-direction: column;
+        flex-direction: row;
     }
     .menu {
-      margin-left: 0;
-      margin-top: 20px; 
+        margin-left: 0;
+        margin-top: 20px; 
     }
     .menuContents {
-      flex-direction: column;
-      gap: 10px;
-      margin-left: 0;
+        display: none;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .headerRight{
+        margin-right: 0px;
     }
     .pegasusLogo {
       margin-bottom: 20px;
@@ -346,6 +417,9 @@
         align-items: center;
         transform: translate(50%, 50%);
     }
+    .rotaVeUcusAra{
+        flex-direction: column;
+    }
     .rota{
         align-items: center;
     }
@@ -359,8 +433,9 @@
         cursor: pointer;
     }
     .ucusAra{
-        margin-top: 5%;
-        margin-left: 30%;
+        margin-top: 1%;
+        margin-bottom: 4%;
+        margin-left: 10%;
     }
     .butceneGorePlanlaCerceve{
         border-radius: 10px;
@@ -381,6 +456,10 @@
         display: none;
     }
     .detayButon{
+        display: none;
+    }
+    .detayButonV2{
+        display: block;
         width: 15px;
         background-color: none;
     }
